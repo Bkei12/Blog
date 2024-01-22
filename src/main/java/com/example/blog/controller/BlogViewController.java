@@ -20,6 +20,7 @@ public class BlogViewController {
 
     private final BlogService blogService;
 
+    // 블로그 글 전체 조회
     @GetMapping("/articles")
     public String getArticles(Model model) {
         List<ArticleListViewResponse> articles = blogService.findAll().stream()
@@ -30,6 +31,7 @@ public class BlogViewController {
         return "articleList";
     }
 
+    // 특정 블로그 글 조회
     @GetMapping("/articles/{id}")
     public String getArticle(@PathVariable long id, Model model) {
         Article article = blogService.findById(id);
@@ -38,6 +40,7 @@ public class BlogViewController {
         return "article";
     }
 
+    // 블로그 수정/생성
     @GetMapping("/new-article")
     // id 키를 가진 쿼리 파라미터의 값을 id변수에 매핑 (id는 없을 수도 있음)
     public String newArticle(@RequestParam(required = false) Long id, Model model)

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 
 @EnableJpaAuditing // created_at, updated_at 자동 업데이트
-@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class BlogApplication {
 
     public static void main(String[] args) {
