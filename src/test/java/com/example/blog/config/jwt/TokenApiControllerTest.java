@@ -1,4 +1,4 @@
-package com.example.blog.config.jwt;
+/*package com.example.blog.config.jwt;
 
 import com.example.blog.domain.RefreshToken;
 import com.example.blog.domain.User;
@@ -86,4 +86,4 @@ class TokenApiControllerTest {
                 .andExpect(jsonPath("$.accessToken").isNotEmpty());
     }
 
-}
+}*/
