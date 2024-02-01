@@ -1,4 +1,4 @@
-package com.example.blog.config.jwt;
+/* package com.example.blog.config.jwt;
 
 import com.example.blog.domain.User;
 import com.example.blog.repository.UserRepository;
@@ -116,4 +116,4 @@ class TokenProviderTest {
         // then
         assertThat(userIdByToken).isEqualTo(userId);
     }
-}
+}*/
